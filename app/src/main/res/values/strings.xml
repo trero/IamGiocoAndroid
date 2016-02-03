@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Iam Gioco</string>
+    <string name="saluto_nome_utente">Ciao</string>
+    <string name="nome_utente"></string>
+    <string name="crediti_utente">Crediti:</string>
+    <string name="totale_crediti_utente"></string>
+    <string name="nuova_partita">Nuova Partita</string>
+    <string name="negozio">Negozio</string>
+    <string name="record">Record</string>
+    <string name="punti">Punti</string>
+    <string name="time">Tempo</string>
+    <string name="punteggio_finale">Punteggio finale</string>
+    <string name="punti_totali">Totale punti: </string>
+    <string name="crediti_vinti">Crediti vinti: </string>
+    <string name="home">Home</string>
+</resources>
