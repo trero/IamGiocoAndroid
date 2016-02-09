@@ -15,9 +15,16 @@ public class ImageDownloadTask extends AsyncTask<Void, Void, Void>
 {
     private String imageUrl;
     protected Drawable image;
+    protected int contatoreCicli;
 
     public ImageDownloadTask(String imageUrl)
     {
+        this.imageUrl = imageUrl;
+    }
+
+    public ImageDownloadTask(int contatoreCicli, String imageUrl)
+    {
+        this.contatoreCicli = contatoreCicli;
         this.imageUrl = imageUrl;
     }
 
@@ -38,5 +45,15 @@ public class ImageDownloadTask extends AsyncTask<Void, Void, Void>
         InputStream inputStream = (InputStream) new URL(url).getContent();
 
         return Drawable.createFromStream(inputStream, "src name");
+    }
+
+    public int getContatoreCicli()
+    {
+        return contatoreCicli;
+    }
+
+    public void setContatoreCicli(int contatoreCicli)
+    {
+        this.contatoreCicli = contatoreCicli;
     }
 }

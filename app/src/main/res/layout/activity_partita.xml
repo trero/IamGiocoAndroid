@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -14,25 +14,25 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#69b3fe"
             android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/punti"
-                android:id="@+id/puntiPartita"
+                android:layout_weight="1"
                 android:padding="10dp"
-                android:layout_marginRight="30dp" />
+                android:text="Faccia da Picasso"
+                android:id="@+id/nomeGiocatore" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/time"
-                android:id="@+id/tempoPartita"
-                android:layout_marginLeft="30dp" />
+                android:text="@string/punteggio"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:id="@+id/punteggioGiocatore" />
 
         </LinearLayout>
 
@@ -72,14 +72,14 @@
                             android:layout_height="match_parent">
 
                             <Button
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="New Button"
                                 android:id="@+id/responseOne"
                                 android:layout_weight="1" />
 
                             <Button
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="New Button"
                                 android:id="@+id/responseTwo"
@@ -92,14 +92,14 @@
                             android:layout_height="match_parent">
 
                             <Button
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="New Button"
                                 android:id="@+id/responseThree"
                                 android:layout_weight="1" />
 
                             <Button
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="New Button"
                                 android:id="@+id/responseFour"
@@ -120,21 +120,21 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView2"
+                    android:id="@+id/erroreUno"
                     android:src="@drawable/cuoricino_30"
                     android:layout_marginRight="10dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView3"
+                    android:id="@+id/erroreDue"
                     android:src="@drawable/cuoricino_30"
                     android:layout_marginRight="10dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView4"
+                    android:id="@+id/erroreTre"
                     android:src="@drawable/cuoricino_30" />
             </LinearLayout>
 
@@ -142,4 +142,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>

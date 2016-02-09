@@ -7,8 +7,7 @@
     <string name="nuova_partita">Nuova Partita</string>
     <string name="negozio">Negozio</string>
     <string name="record">Record</string>
-    <string name="punti">Punti</string>
-    <string name="time">Tempo</string>
+    <string name="punteggio">Punti: </string>
     <string name="punteggio_finale">Punteggio finale</string>
     <string name="punti_totali">Totale punti: </string>
     <string name="crediti_vinti">Crediti vinti: </string>

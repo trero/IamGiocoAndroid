@@ -12,17 +12,19 @@ public class MainActivity extends Activity
 {
     private Button nuovaPartita;
     private Button negozio;
-    private int count = 0;
     private IamApp app;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         app = (IamApp) getApplication();
 
         nuovaPartita = (Button) findViewById(R.id.buttonNuovaPartita);
+        negozio = (Button) findViewById(R.id.buttonNegozio);
+
         nuovaPartita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +44,6 @@ public class MainActivity extends Activity
             }
         });
 
-        negozio = (Button) findViewById(R.id.buttonNegozio);
         negozio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,4 @@ public class MainActivity extends Activity
             }
         });
     }
-
-
 }
